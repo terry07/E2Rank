@@ -2,9 +2,9 @@
 <h1>E2Rank: Your Text Embedding can Also be an Effective and Efficient Listwise Reranker</h1>
 
 <a href="https://Alibaba-NLP.github.io/E2Rank/">🤖 Website</a> | 
-<a href="https://arxiv.org/pdf/2501.07572">📄 Arxiv Paper</a> | 
+<a href="https://arxiv.org/abs/2510.00000">📄 Arxiv Paper</a> | 
 <a href="https://huggingface.co/collections/Alibaba-NLP/e2rank">🤗 Huggingface Collection</a> |
-<a href="# 🚩Citation">🚩 Citation</a>
+<a href="https://github.com/Alibaba-NLP/E2Rank?tab=readme-ov-file#-citation">🚩 Citation</a>
 
 </div>
 
@@ -36,7 +36,7 @@ offering both computational efficiency and competitive ranking accuracy.
 
 
 <div align="center">
-    <img src="assets/cover.png" width="80%" height="auto" />
+    <img src="assets/cover.png" width="90%" height="auto" />
     <p style="width: 70%; margin-left: auto; margin-right: auto">
         <b>(a)</b> Overview of E2Rank. <b>(b)</b> Average reranking performance on the BEIR benchmark, E2Rank outperforms other baselines. <b>(c)</b> Reranking latency per query on the Covid dataset, E2Rank can achieve several times the acceleration compared with RankQwen3.
     </p>
@@ -399,7 +399,7 @@ python src/eval.py \
 
 - `model_name`: Path or name of the model weights file (e.g., "Alibaba-NLP/E2Rank-0.6B").
 - `datasets`: A list of the names of datasets to be evaluated (e.g., `dl19 dl20 covid ...`). For full dataset names, please refer to `src/eval.py`.
-- `retriever`: The retriever used to retrieve the initial candidate documents (Supports `bm25` (for all datasets), `reasonir` (for BRIGHT), et, al, see [https://huggingface.co/datasets/liuqi6777/retrieval_results](liuqi6777/retrieval_results) for all released first-stage retrieval results).
+- `retriever`: The retriever used to retrieve the initial candidate documents (Supports `bm25` (for all datasets), `reasonir` (for BRIGHT), et, al, see [this huggingface repo](https://huggingface.co/datasets/liuqi6777/retrieval_results) for all released first-stage retrieval results).
 - `save-to`: The jsonl file to save the evaluation results. The trec-format running file will also be stored in the dictory of `outputs`.
 
 > **Note**:
@@ -428,7 +428,7 @@ python3 eval_mteb/summary.py results/mteb/${model_name}/${model_name}/no_version
 
 The implementation of evaluation on MTEB are modified from [Qwen3-Embedding](https://github.com/QwenLM/Qwen3-Embedding/blob/main/evaluation/README.md). Sincere thanks for their efforts.
 
-# 🚩 Citation
+## 🚩 Citation
 
 If this work is helpful, please kindly cite as:
 
