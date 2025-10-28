@@ -2,7 +2,7 @@
 <h1>E2Rank: Your Text Embedding can Also be an Effective and Efficient Listwise Reranker</h1>
 
 <a href="https://Alibaba-NLP.github.io/E2Rank/">🤖 Website</a> | 
-<a href="https://arxiv.org/abs/2510.00000">📄 Arxiv Paper</a> | 
+<a href="https://arxiv.org/abs/2510.22733">📄 Arxiv Paper</a> | 
 <a href="https://huggingface.co/collections/Alibaba-NLP/e2rank">🤗 Huggingface Collection</a> |
 <a href="https://github.com/Alibaba-NLP/E2Rank?tab=readme-ov-file#-citation">🚩 Citation</a>
 
@@ -57,7 +57,7 @@ offering both computational efficiency and competitive ranking accuracy.
 
 
 > **Note**:
-> - `Embedding Only` indicates that the model is trained only with the constrative learning and support embedding tasks, while `Embedding + Reranking` indicates the **full E2Rank model** trained with both embedding and reranking objectives (for more detals, please refer to the [paper]()). 
+> - `Embedding Only` indicates that the model is trained only with the constrative learning and support embedding tasks, while `Embedding + Reranking` indicates the **full E2Rank model** trained with both embedding and reranking objectives (for more detals, please refer to the [paper](https://arxiv.org/abs/2510.22733)). 
 > - `Instruction Aware` notes whether the model supports customizing the input instruction according to different tasks.
 
 ## Usage
@@ -433,7 +433,15 @@ The implementation of evaluation on MTEB are modified from [Qwen3-Embedding](htt
 If this work is helpful, please kindly cite as:
 
 ```bibtext
-
+@misc{liu2025e2rank,
+      title={E2Rank: Your Text Embedding can Also be an Effective and Efficient Listwise Reranker}, 
+      author={Qi Liu and Yanzhao Zhang and Mingxin Li and Dingkun Long and Pengjun Xie and Jiaxin Mao},
+      year={2025},
+      eprint={2510.22733},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.22733}, 
+}
 ```
 
 If you have any questions, feel free to contact us via qiliu6777[AT]gmail.com or create an issue.
